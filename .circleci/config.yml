@@ -12,14 +12,14 @@ jobs:
       - browser-tools/install-firefox
       - restore_cache:
           keys:
-            - node-v1-{{ .Branch }}-{{ checksum "package-lock.json"}}
+            - node-v1-{{ .Branch }}-{{ checksum "yarn.lock"}}
       - run:
           name: Install dependencies
-          command: npm install
+          command: yarn
       - run:
           name: Run test
-          command: npm run test
+          command: yarn test
       - save_cache:
           paths:
             - ./node_modules
-          key: node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          key: node-v1-{{ .Branch }}-{{ checksum "yarn.lock" }}
