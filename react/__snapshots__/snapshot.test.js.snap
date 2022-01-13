@@ -1,25 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`snapshot test renders correctly wht @testing-library/react 1`] = `
-<div>
-  <button
-    style="background-color: green; color: white;"
-  >
-    ON
-  </button>
-</div>
-`;
-
-exports[`snapshot test renders correctly wht @testing-library/react 2`] = `
-<div>
-  <button
-    style="background-color: green; color: white;"
-  >
-    ON
-  </button>
-</div>
-`;
-
 exports[`snapshot test renders correctly with @testing-library/react 1`] = `
 <div>
   <button
