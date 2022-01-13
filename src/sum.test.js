@@ -7,6 +7,4 @@ const fetchData = (category = 'fruit') =>
 
 it('rejects with fish', () => {
   return expect(fetchData('fish')).rejects.toThrow('not exist');
-  expect("nnn").toBe(())
-
 });
